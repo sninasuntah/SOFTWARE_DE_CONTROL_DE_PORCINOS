@@ -21,6 +21,13 @@ namespace ControlPorcino
             string sexo = rbMacho.Checked ? "Macho" : "Hembra";
             string salud = rbSaludable.Checked ? "Saludable" : "Enfermo";
 
+            MessageBox.Show(
+            "Registro guardado correctamente",
+            "Éxito",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Information
+            );
+
             dgvCrianza.Rows.Add(
                 txtIDCrianza.Text,
                 dtpCrianza.Value.ToShortDateString(),
@@ -44,12 +51,12 @@ namespace ControlPorcino
 
         private void btnVolverCrianza_Click(object sender, EventArgs e)
         {
-            Form1 i = new Form1();
-            i.Show();
+            Form1 f = new Form1();
+            f.Show();
             this.Close();
         }
 
-        // ⬇️ Métodos vacíos PARA QUE EL DESIGNER NO FALLE
+        
         private void label2_Click(object sender, EventArgs e) { }
         private void lblSexo_Click(object sender, EventArgs e) { }
         private void rbMacho_CheckedChanged(object sender, EventArgs e) { }

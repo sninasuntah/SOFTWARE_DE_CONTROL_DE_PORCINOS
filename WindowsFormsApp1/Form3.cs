@@ -9,16 +9,20 @@ namespace ControlPorcino
         {
             InitializeComponent();
 
-            // Conectar eventos Click
-            btnGuardarAlimentacion.Click += btnGuardarAlimentacion_Click;
-            btnVolverAlimentación.Click += btnVolverAlimentación_Click;
+            
+           
         }
 
         private void btnGuardarAlimentacion_Click(object sender, EventArgs e)
         {
             string tipo = rbBalanceado.Checked ? "Balanceado" :
                           rbMaíz.Checked ? "Maíz" : "Suplemento";
-
+            MessageBox.Show(
+            "Registro guardado correctamente",
+            "Éxito",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Information
+            );
             dgvAlimentacion.Rows.Add(
                 txtIDAlimentacion.Text,
                 tipo,
@@ -31,7 +35,7 @@ namespace ControlPorcino
 
         private void btnVolverAlimentación_Click(object sender, EventArgs e)
         {
-            Form1 f = new Form1();
+            MenuFun1 f = new MenuFun1();
             f.Show();
             this.Close();
         }

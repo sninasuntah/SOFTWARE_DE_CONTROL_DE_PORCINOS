@@ -59,22 +59,24 @@
             // 
             // btnVolverCrianza
             // 
+            this.btnVolverCrianza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnVolverCrianza.Location = new System.Drawing.Point(426, 24);
             this.btnVolverCrianza.Name = "btnVolverCrianza";
             this.btnVolverCrianza.Size = new System.Drawing.Size(106, 53);
             this.btnVolverCrianza.TabIndex = 1;
             this.btnVolverCrianza.Text = "Volver";
-            this.btnVolverCrianza.UseVisualStyleBackColor = true;
+            this.btnVolverCrianza.UseVisualStyleBackColor = false;
             this.btnVolverCrianza.Click += new System.EventHandler(this.btnVolverCrianza_Click);
             // 
             // btnGuardarCrianza
             // 
+            this.btnGuardarCrianza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnGuardarCrianza.Location = new System.Drawing.Point(426, 329);
             this.btnGuardarCrianza.Name = "btnGuardarCrianza";
             this.btnGuardarCrianza.Size = new System.Drawing.Size(106, 56);
             this.btnGuardarCrianza.TabIndex = 2;
             this.btnGuardarCrianza.Text = "Guardar";
-            this.btnGuardarCrianza.UseVisualStyleBackColor = true;
+            this.btnGuardarCrianza.UseVisualStyleBackColor = false;
             this.btnGuardarCrianza.Click += new System.EventHandler(this.btnGuardarCrianza_Click);
             // 
             // lblIDCrianza
@@ -131,6 +133,7 @@
             // 
             // dgvCrianza
             // 
+            this.dgvCrianza.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dgvCrianza.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCrianza.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnIDCrianza,
@@ -170,6 +173,7 @@
             // 
             // txtIDCrianza
             // 
+            this.txtIDCrianza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtIDCrianza.Location = new System.Drawing.Point(677, 44);
             this.txtIDCrianza.Name = "txtIDCrianza";
             this.txtIDCrianza.Size = new System.Drawing.Size(93, 20);
@@ -177,7 +181,7 @@
             // 
             // gbSexo
             // 
-            this.gbSexo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.gbSexo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.gbSexo.Controls.Add(this.rbHembra);
             this.gbSexo.Controls.Add(this.rbMacho);
             this.gbSexo.Location = new System.Drawing.Point(525, 147);
@@ -212,7 +216,7 @@
             // 
             // gbSalud
             // 
-            this.gbSalud.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.gbSalud.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.gbSalud.Controls.Add(this.rbEnfermo);
             this.gbSalud.Controls.Add(this.rbSaludable);
             this.gbSalud.Location = new System.Drawing.Point(792, 147);
@@ -246,6 +250,7 @@
             // 
             // txtObservaciones
             // 
+            this.txtObservaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtObservaciones.Location = new System.Drawing.Point(549, 234);
             this.txtObservaciones.Multiline = true;
             this.txtObservaciones.Name = "txtObservaciones";
@@ -292,6 +297,7 @@
             this.Controls.Add(this.btnVolverCrianza);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.dgvCrianza)).EndInit();
             this.gbSexo.ResumeLayout(false);

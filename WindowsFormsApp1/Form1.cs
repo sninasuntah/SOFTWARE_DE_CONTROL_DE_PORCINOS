@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using WindowsFormsApp1;
 
 namespace ControlPorcino
 {
@@ -28,6 +29,18 @@ namespace ControlPorcino
         {
             Peso fPeso = new Peso();
             fPeso.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVolverPrincipal_Click(object sender, EventArgs e)
+        {
+            Form5 f = new Form5();
+            f.Show();
             this.Hide();
         }
     }

@@ -9,12 +9,18 @@ namespace ControlPorcino
         {
             InitializeComponent();
 
-            btnGuardarPeso.Click += btnGuardarPeso_Click;
-            btnVolverPeso.Click += btnVolverPeso_Click;
+            
+            
         }
 
         private void btnGuardarPeso_Click(object sender, EventArgs e)
         {
+            MessageBox.Show(
+            "Registro guardado correctamente",
+            "Éxito",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Information
+            );
             // Solo agregamos los valores necesarios: ID, Peso, Fecha
             dgvPeso.Rows.Add(
                 textBox1.Text,           // ID del cerdo
@@ -22,7 +28,7 @@ namespace ControlPorcino
                 dtpPeso.Value.ToShortDateString()  // Fecha del pesaje
             );
 
-            // Limpiar controles
+            
             textBox1.Clear();
             textBox2.Clear();
         }
@@ -30,7 +36,7 @@ namespace ControlPorcino
 
         private void btnVolverPeso_Click(object sender, EventArgs e)
         {
-            Form1 f = new Form1();
+            MenuFun1 f = new MenuFun1();
             f.Show();
             this.Close();
         }
